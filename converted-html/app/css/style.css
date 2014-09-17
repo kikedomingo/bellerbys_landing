@@ -1,0 +1,670 @@
+@charset "UTF-8";
+/* HEADER */
+.normal {
+  font-family: "FS Truman Web Regular", Arial, sans-serif !important;
+  font-weight: normal !important;
+  font-style: normal !important; }
+
+body {
+  font-family: "FS Truman Web Light", Arial, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 13px !important;
+  line-height: 1.5em !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "FS Truman Web Bold", Arial, sans-serif !important;
+  font-weight: bold !important;
+  font-style: normal !important; }
+
+h5 {
+  color: #c80225 !important; }
+
+strong {
+  font-family: "FS Truman Web Bold", Arial, sans-serif !important;
+  font-weight: bold !important;
+  font-style: normal !important; }
+
+.btn.red {
+  color: #ffffff;
+  background: #c80225;
+  background: -moz-linear-gradient(top, #c80225 0%, #b11829 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c80225), color-stop(100%, #b11829));
+  background: -webkit-linear-gradient(top, #c80225 0%, #b11829 100%);
+  background: -o-linear-gradient(top, #c80225 0%, #b11829 100%);
+  background: -ms-linear-gradient(top, #c80225 0%, #b11829 100%);
+  background: linear-gradient(to bottom, #c80225 0%, #b11829 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c80225', endColorstr='#b11829',GradientType=0 );
+}
+
+.btn.btn-lg {
+  padding: 13px 23px;
+  padding-bottom: 15px;
+  font-size: 21px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.btn.btn-sm {
+  padding: 2px 11px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px; }
+  .btn.btn-sm .glyphicon {
+    margin-top: 3px;
+    margin-left: 5px; }
+
+.btn.red:active, .btn.red:focus {
+  background: #b11829;
+  /* Old browsers */ }
+
+.switch {
+  position: relative;
+  display: block !important;
+  z-index: 1999;
+  float: right;
+  padding: 9px 12px !important;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border: 1px solid #2d3339 !important;
+  background-color: rgba(45, 51, 57, 0.6) !important; }
+  .switch:hover {
+    background-color: rgba(45, 51, 57, 0.8) !important; }
+
+.switch .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px; }
+
+.switch .icon-bar + .icon-bar {
+  margin-top: 4px; }
+
+.switch:hover, .switch:focus {
+  background-color: rgba(0, 0, 0, 0.18); }
+
+.switch.active {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.switch .icon-bar {
+  background-color: white; }
+
+.full-width,
+#testimonials,
+#study-options {
+  padding: 30px 0px 40px 0px; }
+
+#study-options .gcse span.img {
+  background: url("../img/gcse.png") center no-repeat; }
+#study-options .gcse ul {
+  color: #009bd7; }
+#study-options .gcse ul a, #study-options .gcse ul a:hover {
+  color: #009bd7; }
+#testimonials .gcse span {
+  background-color: #009bd7; }
+
+#study-options .a-l span.img {
+  background: url("../img/a-l.png") center no-repeat; }
+#study-options .a-l ul {
+  color: #a39d6f; }
+#study-options .a-l ul a, #study-options .a-l ul a:hover {
+  color: #a39d6f; }
+#testimonials .a-l span {
+  background-color: #a39d6f; }
+
+#study-options .fdn span.img {
+  background: url("../img/fdn.png") center no-repeat; }
+#study-options .fdn ul {
+  color: #86b59f; }
+#study-options .fdn ul a, #study-options .fdn ul a:hover {
+  color: #86b59f; }
+#testimonials .fdn span {
+  background-color: #86b59f; }
+
+#study-options .ug1 span.img {
+  background: url("../img/ug1.png") center no-repeat; }
+#study-options .ug1 ul {
+  color: #b64290; }
+#study-options .ug1 ul a, #study-options .ug1 ul a:hover {
+  color: #b64290; }
+#testimonials .ug1 span {
+  background-color: #b64290; }
+
+#study-options .premas span.img {
+  background: url("../img/premas.png") center no-repeat; }
+#study-options .premas ul {
+  color: #f0b50d; }
+#study-options .premas ul a, #study-options .premas ul a:hover {
+  color: #f0b50d; }
+#testimonials .premas span {
+  background-color: #f0b50d; }
+
+header {
+  width: 100%;
+  height: 75px;
+  background-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: #ffffff;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  -ms-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all; }
+  header.addbg {
+    background-color: #2d3339;
+    background-color: rgba(45, 51, 57, 0.9);
+    height: 55px;
+    padding-top: 10px; }
+  header .social_media img {
+    opacity: 0.8;
+    -webkit-transition: .2s opacity;
+    -moz-transition: .2s opacity;
+    -ms-transition: .2s opacity;
+    -o-transition: .2s opacity;
+    transition: .2s opacity; }
+  header .social_media img:hover {
+    opacity: 1; }
+  header nav ul li {
+    display: inline;
+    margin-left: 5px; }
+  header nav ul li a {
+    display: inline-block;
+    padding: 3px 10px;
+    font-family: "FS Truman Web Bold", Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-style: normal !important;
+    font-size: 16px;
+    line-height: 1.7em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff; }
+  header nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; }
+  header nav ul li:last-child a {
+    background-color: rgba(45, 51, 57, 0.6); }
+  header nav ul li:last-child a:hover {
+    background-color: rgba(45, 51, 57, 0.8); }
+  header.addbg nav ul li:last-child a {
+    background-color: rgba(45, 51, 57, 0.9); }
+  header.addbg nav ul li:last-child a:hover {
+    background-color: #2d3339; }
+
+section h2 {
+  color: #c80225;
+  font-family: "FS Truman Web Regular", Arial, sans-serif !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  background: url("../img/h2-line.jpg") 50% repeat-x;
+  width: 100%;
+  padding-bottom: 5px; }
+  section h2 span {
+    background-color: #fff;
+    padding-right: 10px; }
+
+#cover {
+  background-color: #2d3339;
+  height: 620px;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed; }
+  #cover .shadow {
+    background: url("../img/shadow.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-position: center; }
+  #cover .container {
+    position: relative;
+    z-index: 2;
+    height: 100%; }
+  #cover .container .hero {
+    position: absolute;
+    bottom: 15px;
+    padding-bottom: 50px;
+    z-index: 2; }
+  #cover .container h1 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    line-height: 1.2em !important; }
+  #cover .container h2 {
+    color: #ded7d2 !important;
+    font-size: 25px !important;
+    margin-top: 18px !important; }
+  #cover .container h1, #cover .container h2 {
+    font-family: "FS Truman Web Regular", Arial, sans-serif !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    background: transparent !important; }
+  #cover .container .btn.red {
+    margin-top: 15px; }
+
+#introduction {
+  background: url("../img/intro-bg.jpg") center bottom #ebe9e5 no-repeat;
+  z-index: 5;
+  padding: 50px 0; }
+  #introduction .container {
+    border-top: 1px solid #ccc;
+    padding-top: 25px; }
+  #introduction p.intro {
+    font-family: "FS Truman Web Bold", Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-style: normal !important;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-bottom: 30px; }
+  #introduction .form-box {
+    margin-top: -180px;
+    background-color: #dcd9d5;
+    height: auto;
+    z-index: 5;
+    padding: 20px 30px;
+    border: 2px solid #cbcac8;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+
+.full-width p {
+  margin: 25px 0; }
+.full-width .btn.btn-lg.red {
+  margin: 15px 0; }
+.full-width h6 {
+  padding-left: 18px;
+  width: 33%;
+  color: #c80225;
+  border-left: 5px solid #afbcc4;
+  float: right;
+  text-transform: inherit;
+  margin-left: 15px;
+  margin-right: -120px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  font-family: "FS Truman Web Light", Arial, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 21px !important;
+  line-height: 1.3em !important; }
+
+#colleges {
+  background-color: #2d3339;
+  position: relative; }
+  #colleges a:hover .school .featurebox {
+    background: #2d3339; }
+  #colleges .school {
+    display: inline-block;
+    width: 25%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-position: center;
+    height: 470px;
+    position: relative;
+    opacity: 1;
+    margin-top: -2px; }
+  #colleges .school .featurebox {
+    background: rgba(45, 51, 57, 0.85);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 15px;
+    max-width: 85%;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    -ms-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all; }
+  #colleges .school .featurebox h3 {
+    font-family: "FS Truman Web Regular", Arial, sans-serif !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    margin-top: 0px; }
+  #colleges .school .featurebox p {
+    color: #dcd9d5;
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  #colleges .school:nth-child(3) .featurebox, #colleges .school:nth-child(4) .featurebox {
+    left: 15px;
+    right: auto; }
+
+#study-options {
+  line-height: 1.3em !important; }
+  #study-options h2 {
+    margin-bottom: 15px; }
+  #study-options div {
+    margin-bottom: 20px;
+    position: relative; }
+  #study-options div span.img {
+    display: inline-block;
+    width: 60px;
+    height: 62px;
+    float: left; }
+  #study-options div .text {
+    font-family: "FS Truman Web Bold", Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-style: normal !important;
+    margin-left: 75px;
+    padding-top: 10px;
+    line-height: 1.2em !important; }
+  #study-options div ul {
+    margin-left: 80px;
+    margin-top: 10px; }
+
+#admissions {
+  background-color: #ccc; }
+
+#testimonials {
+  padding-top: 60px;
+  padding-bottom: 55px; }
+  #testimonials .director-quote {
+    width: 100%;
+    height: auto;
+    font-family: "FS Truman Web Regular", Arial, sans-serif !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 40px; }
+  #testimonials .director-quote-bg {
+    background-color: #ebe9e5;
+    border-bottom: 2px solid #dcd9d5;
+    color: #c80225;
+    width: 100%;
+    height: auto;
+    padding: 17px 19px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.4em; }
+  #testimonials .director-quote p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6em; }
+  #testimonials .director-quote p:before {
+    content: '“'; }
+  #testimonials .director-quote p:after {
+    content: '”'; }
+  #testimonials .director-quote cite {
+    margin-left: 20px;
+    padding-top: 10px;
+    display: block; }
+  #testimonials .student_testimonial {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 50px; }
+    #testimonials .student_testimonial span {
+      display: inline-block;
+      padding: 15px 25px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      margin-right: 30px; }
+      #testimonials .student_testimonial span p {
+        line-height: 1.4em;
+        width: 75%; }
+      #testimonials .student_testimonial span cite {
+        color: #000000;
+        line-height: 1.2em; }
+        #testimonials .student_testimonial span cite strong {
+          display: block; }
+    #testimonials .student_testimonial img {
+      float: right;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+
+.bg_img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  width: 100%;
+  position: relative;
+  padding: 0px !important;
+  color: #ffffff; }
+  .bg_img .shadow {
+    background: url("../img/full_shadow.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-position: center; }
+  .bg_img .container {
+    position: relative;
+    z-index: 2;
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  .bg_img h2 {
+    color: #ffffff;
+    /*background: url('../img/h2-line-white.jpg') 50% repeat-x;*/
+    background: transparent; }
+    .bg_img h2 span {
+      background-color: transparent;
+      padding-right: 10px; }
+
+footer {
+  background-color: #2d3339;
+  color: #ffffff;
+  padding: 30px 0;
+  padding-bottom: 55px; }
+  footer p {
+    padding-left: 4px; }
+  footer ul {
+    list-style: none;
+    text-align: right; }
+    footer ul li:first-child a {
+      font-family: "FS Truman Web Bold", Arial, sans-serif !important;
+      font-weight: bold !important;
+      font-style: normal !important; }
+    footer ul a {
+      color: #ffffff; }
+      footer ul a:hover {
+        color: #ffffff; }
+
+/**************************************/
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+  body {
+    font-size: 16px !important;
+    line-height: 1.6em !important; }
+
+  .social_media_wrapper {
+    display: none; }
+
+  .logo {
+    float: left; }
+
+  .btn.btn-lg {
+    padding: 7px 20px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px; }
+
+  .full-width,
+  #testimonials,
+  #study-options {
+    padding: 8px 0px 20px 0px; }
+
+  #cover {
+    height: 520px; }
+
+  .full-width h6 {
+    font-size: 16px !important;
+    padding-left: 13px;
+    margin-left: 10px; }
+  .full-width.bg_img {
+    background: #ebe9e5 !important;
+    color: inherit; }
+    .full-width.bg_img .shadow {
+      display: none; }
+    .full-width.bg_img .container {
+      padding-top: 10px;
+      padding-bottom: 20px; }
+    .full-width.bg_img h2 {
+      color: #c80225;
+      margin-bottom: 0;
+      background: url("../img/h2-line-white.jpg") 50% repeat-x; }
+      .full-width.bg_img h2 span {
+        background-color: #ebe9e5;
+        padding-right: 10px; }
+
+  #colleges .school {
+    display: block;
+    width: 100%;
+    max-height: 300px; }
+
+  #introduction {
+    background: #ebe9e5;
+    padding: 20px 0; }
+    #introduction .container {
+      border-top: 0px;
+      padding-top: 0px; }
+    #introduction .form-box {
+      margin-top: 20px;
+      padding: 10px 20px;
+      max-width: 92%;
+      margin: 0 auto;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px; }
+
+  #study-options div ul {
+    margin-left: 35px;
+    margin-top: 5px; }
+
+  #testimonials {
+    padding-top: 30px !important; }
+    #testimonials .director-quote {
+      line-height: 1.4em;
+      margin-bottom: 10px; }
+    #testimonials .circle {
+      display: none; }
+
+  footer ul {
+    padding-left: 5px;
+    margin-top: 20px;
+    text-align: left; } }
+@media (max-width: 767px) {
+  header {
+    background-color: #2d3339;
+    background-color: rgba(45, 51, 57, 0.9);
+    height: 45px !important;
+    padding-top: 5px !important; }
+    header .logo img {
+      max-width: 200px;
+      margin-top: 4px; }
+    header nav ul {
+      display: none; }
+    header ul {
+      margin-top: 8px !important;
+      padding-top: 7px !important; }
+      header ul:before {
+        top: 34px !important; }
+    header .appear {
+      display: block;
+      background: #2d3339;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px;
+      margin-top: 5px;
+      width: 100%;
+      padding: 10px 5px;
+      -webkit-transition: .2s all;
+      -moz-transition: .2s all;
+      -ms-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all; }
+      header .appear:before {
+        position: absolute;
+        right: 35px;
+        top: 31px;
+        display: inline-block;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #2d3339;
+        border-top: 6px solid transparent;
+        border-left: 6px solid transparent;
+        content: '';
+        height: 5px; }
+      header .appear li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #363d44; }
+        header .appear li:last-child {
+          border-bottom: 0px; }
+        header .appear li a {
+          display: block;
+          width: 100%; }
+
+  .full-width h6 {
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    margin-left: 8px !important;
+    border-left: 2px solid #afbcc4; }
+
+  section h2 {
+    font-size: 22px;
+    padding-bottom: 0px;
+    line-height: 1em; }
+
+  #cover {
+    height: 400px !important;
+    background-attachment: scroll; }
+    #cover .container {
+      padding-bottom: 0 !important; }
+      #cover .container .hero {
+        bottom: 15px;
+        padding-bottom: 0px; }
+      #cover .container h1 {
+        font-size: 30px !important;
+        line-height: 1.2em !important; }
+      #cover .container h2 {
+        font-size: 20px !important;
+        margin-top: 12px !important; }
+
+  #testimonials .student_testimonial {
+    font-size: 15px;
+    line-height: 1.2em; }
+    #testimonials .student_testimonial span p {
+      width: 65%;
+      line-height: 1.3em; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .social_media {
+    padding-left: 20px; } }
+@media (max-width: 1380px) {
+  .full-width h6 {
+    margin-right: 0px; } }
+/* /MEDIA QUERIES */
+/**************************************/

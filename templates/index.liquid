@@ -1,0 +1,374 @@
+{% block styles %}
+<!-- ***************************** -->
+<!-- TODO: WHAT IF THEY ADD MORE THAN ONE "BIG-IMG BOX" LIKE ADMISSIONS? -->
+<!-- ***************************** -->
+	<style>
+		#cover {
+		  background-image: url("app/img/cover_1.jpg");
+		}
+
+		#admissions {
+		  background-image: url("app/img/admissions_1.jpg");
+		}
+
+		#test {
+		  background-image: url("app/img/admissions_1.jpg");
+		}
+
+		.school#brighton {
+			background-image: url("app/img/brighton.jpg");
+		}
+
+		.school#cambridge {
+			background-image: url("app/img/cambridge.jpg");
+		}
+
+		.school#london {
+			background-image: url("app/img/london.jpg");
+		}
+
+		.school#oxford {
+			background-image: url("app/img/oxford.jpg");
+		}
+
+	</style>
+{% endblock %}
+
+{% block content %}
+		{% include "navbar" %}
+		<div id="cover" class="bg_img">
+			<div class="shadow"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 hero">
+						<h1>World class teaching within a caring environment</h1>
+						<h2>The UK’s No.1 ranked exclusively international school</h2>
+						<!-- ***************************** -->
+						<!-- This button needs to be editable, and also needs a switch (on/off) so content can disable it if not needed. -->
+						<!-- ***************************** -->
+						<a href="#why" class="btn btn-lg red">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="introduction">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<p class="intro">{{ 1 | lorem_ipsum }}</p>
+						<p>{{ 1 | lorem_ipsum }}</p>
+					</div>
+					<div class="col-md-4 col-md-offset-1 form-box">
+						
+						<!-- ***************************** -->
+						<!-- DUMMY FORM. USE THE PROPPER ONE (STEVE E. KNOWS) -->
+						<!-- ***************************** -->
+
+						<form role="form">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Check me out
+						    </label>
+						  </div>
+						  <button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width" id="why">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Why Bellerbys?</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<!-- ***************************** -->
+						<!-- Rich text box -->
+						<!-- ***************************** -->
+						{{ 1 | lorem_ipsum:'p' }}
+						<h3>This is a h3 subtitle</h3>
+						<h6>This is a h6 that can be used as a cool quote. long text long text long text but no so long.</h6>
+						{{ 2 | lorem_ipsum:'p' }}
+						<h4>This is a h4 subtitle</h4>
+						<h5>This is a h5 subtitle</h5>
+						<!-- ***************************** -->
+						<!-- /Rich text box -->
+						<!-- ***************************** -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="colleges">
+			<a href="#">
+				<span class="school col-md-4" id="brighton">
+					<span class="featurebox">
+						<h3>Brighton Study Centre</h3>
+						<!-- ***************************** -->
+						<!-- PLAIN text box (all 4) -->
+						<!-- ***************************** -->
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<a href="#">
+				<span class="school col-md-4" id="cambridge">
+					<span class="featurebox">
+						<h3>Cambridge Study Centre</h3>
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<a href="#">
+				<span class="school col-md-4" id="london">
+					<span class="featurebox">
+						<h3>London Study Centre</h3>
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<a href="#">
+				<span class="school col-md-4" id="oxford">
+					<span class="featurebox">
+						<h3>Oxford Study Centre</h3>
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<div class="clearfix"></div>
+		</section>
+
+		<section id="study-options">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Study Options</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<!-- ***************************** -->
+						<!-- Each programme could be a component, so content people can decide which one to use depending on the need of that each landing page -->
+						<!-- ***************************** -->
+						<div class="gcse">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<!-- ***************************** -->
+							<!-- LIST of courses -->
+							<!-- ***************************** -->
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+
+						<div class="a-l">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fdn">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+
+						<div class="ug1">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="premas">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width bg_img" id="admissions">
+			<div class="shadow"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Admissions</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!-- ***************************** -->
+						<!-- Rich text box -->
+						<!-- ***************************** -->
+						{{ 2 | lorem_ipsum:'p' }}
+						<!-- ***************************** -->
+						<!-- /Rich text box -->
+						<!-- ***************************** -->
+						<a href="#" class="btn btn-lg red">Apply now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="director-quote">
+							<div class="director-quote-bg">
+								<p>Our students’ achievements are a direct result of their dedication to study, but are also made possible by our teachers and staff who go the extra mile to deliver a world-class experience for them – a great combination for success!</p>
+							</div>
+							<cite>Andy Airey, Director of Bellerbys College</cite>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<img src="app/img/circle.png" class="circle">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 student_testimonial gcse">
+						<img src="app/img/student1.png">
+						<span>
+							<p>Our students’ achievements are a direct result of their dedication to study, but are also made possible.</p>
+							<cite>
+								<strong>Student Name</strong>
+								text text text
+							</cite>
+						</span>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-5 student_testimonial ug1">
+						<img src="app/img/student1.png">
+						<span>
+							<p>Our students’ achievements are a direct result of their dedication to study, but are also made possible.</p>
+							<cite>
+								<strong>Student Name</strong>
+								text text text
+							</cite>
+						</span>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width bg_img" id="test">
+			<div class="shadow"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Another test</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!-- ***************************** -->
+						<!-- Rich text box -->
+						<!-- ***************************** -->
+						{{ 2 | lorem_ipsum:'p' }}
+						<!-- ***************************** -->
+						<!-- /Rich text box -->
+						<!-- ***************************** -->
+						<a href="#" class="btn btn-lg red">Apply now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<p>© 2014 Study Group</p>
+						<div class="social_media">
+				        	<a href="#"><img src="app/img/instagram.png"></a>
+				        	<a href="#"><img src="app/img/twitter.png"></a>
+				        	<a href="#"><img src="app/img/facebook.png"></a>
+				        	<a href="#"><img src="app/img/gplus.png"></a>
+				        	<a href="#"><img src="app/img/youtube.png"></a>
+				      </div>
+					</div>
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+{% endblock %}

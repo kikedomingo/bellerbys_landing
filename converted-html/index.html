@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Bellerbys 2014 Landing page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+      <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+      <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+      <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
+      <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+      <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
+      <link href="app/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="app/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      
+<!-- ***************************** -->
+<!-- TODO: WHAT IF THEY ADD MORE THAN ONE "BIG-IMG BOX" LIKE ADMISSIONS? -->
+<!-- ***************************** -->
+	<style>
+		#cover {
+		  background-image: url("app/img/cover_1.jpg");
+		}
+
+		#admissions {
+		  background-image: url("app/img/admissions_1.jpg");
+		}
+
+		#test {
+		  background-image: url("app/img/admissions_1.jpg");
+		}
+
+		.school#brighton {
+			background-image: url("app/img/brighton.jpg");
+		}
+
+		.school#cambridge {
+			background-image: url("app/img/cambridge.jpg");
+		}
+
+		.school#london {
+			background-image: url("app/img/london.jpg");
+		}
+
+		.school#oxford {
+			background-image: url("app/img/oxford.jpg");
+		}
+
+	</style>
+
+      <!--[if lt IE 9]>
+          <script src="app/js/html5shiv.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+    
+		<header>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 logo">
+                        <a href="http://www.bellerbys.com/"><img src="app/img/logo.png" border="0"></a>
+                      </div>
+                      <div class="col-md-3 social_media_wrapper">
+                        <div class="social_media">
+                          <a href="#"><img src="app/img/instagram.png"></a>
+                          <a href="#"><img src="app/img/twitter.png"></a>
+                          <a href="#"><img src="app/img/facebook.png"></a>
+                          <a href="#"><img src="app/img/gplus.png"></a>
+                          <a href="#"><img src="app/img/youtube.png"></a>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <nav role="navigation">
+
+                          <button type="button" id="togglenav" class="switch btn visible-xs">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+
+                          <ul class="pull-right" id="nav" role="menu">
+                            <li><a href="#colleges">Locations</a></li>
+                            <li><a href="#study-options">Study Options</a></li>
+                            <li><a href="#admissions">Admissions</a></li>
+                          </ul>
+
+                       </nav>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+		<div id="cover" class="bg_img">
+			<div class="shadow"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 hero">
+						<h1>World class teaching within a caring environment</h1>
+						<h2>The UK’s No.1 ranked exclusively international school</h2>
+						<!-- ***************************** -->
+						<!-- This button needs to be editable, and also needs a switch (on/off) so content can disable it if not needed. -->
+						<!-- ***************************** -->
+						<a href="#why" class="btn btn-lg red">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="introduction">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<p class="intro">Lorem ipsum egestas id at ligula donec mollis sit aliquam morbi turpis porttitor integer. Dictum at ligula vivamus vulputate non metus et quis nisi non. Sollicitudin viverra nam adipiscing sollicitudin tellus facilisis at vel vestibulum massa a. Dictum pretium lectus blandit lacus sociosqu non penatibus libero nibh. Morbi tellus nulla dictumst ullamcorper. 
+
+</p>
+						<p>Lorem ipsum quam ac senectus eget at congue dui rutrum quis scelerisque vulputate. Vivamus litora at pede tellus massa porta vel diam accumsan. Nisi condimentum vel purus. Feugiat iaculis pellentesque. Sed vulputate ante aenean elit commodo elit arcu purus feugiat. Tincidunt pretium curabitur consectetuer dolor lacus sociosqu. Ad vivamus et in erat. 
+
+</p>
+					</div>
+					<div class="col-md-4 col-md-offset-1 form-box">
+						
+						<!-- ***************************** -->
+						<!-- DUMMY FORM. USE THE PROPPER ONE (STEVE E. KNOWS) -->
+						<!-- ***************************** -->
+
+						<form role="form">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Check me out
+						    </label>
+						  </div>
+						  <button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width" id="why">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Why Bellerbys?</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<!-- ***************************** -->
+						<!-- Rich text box -->
+						<!-- ***************************** -->
+						<p>Lorem ipsum nunc nostra et leo mollis suscipit morbi metus donec mattis feugiat pede. Consequat ac eget justo ridiculus ut lacinia. Accumsan in magnis turpis luctus sollicitudin augue lacus hendrerit dapibus aliquam et. Mattis mauris nec tempor. Per mollis sollicitudin mauris. Ac nulla nunc ut nisi fermentum senectus curae; duis litora. Morbi. 
+
+</p>
+						<h3>This is a h3 subtitle</h3>
+						<h6>This is a h6 that can be used as a cool quote. long text long text long text but no so long.</h6>
+						<p>Lorem ipsum quisque vulputate purus. Nonummy est tortor phasellus tempor pellentesque imperdiet. Ipsum in tempus dolor consequat per. Accumsan augue a. Aenean vel dignissim bibendum amet scelerisque sodales dui nunc aenean. Sapien pharetra ac nec eleifend porttitor conubia. Purus vitae et aliquam mi duis nulla porttitor et eu habitasse. A ullamcorper aliquam. 
+
+</p><p>Dui turpis iaculis tempus. Eu fames quisque vehicula. Dis in nunc felis sem rhoncus lacinia sit libero. Sapien quisque ac ad feugiat a. Vulputate id pretium primis. Mi aenean orci nibh ut amet. Amet vehicula interdum nibh metus eget. Vitae nunc tempor in hymenaeos morbi aliquam et. Egestas ultrices ante. 
+
+</p>
+						<h4>This is a h4 subtitle</h4>
+						<h5>This is a h5 subtitle</h5>
+						<!-- ***************************** -->
+						<!-- /Rich text box -->
+						<!-- ***************************** -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="colleges">
+			<a href="#">
+				<span class="school col-md-4" id="brighton">
+					<span class="featurebox">
+						<h3>Brighton Study Centre</h3>
+						<!-- ***************************** -->
+						<!-- PLAIN text box (all 4) -->
+						<!-- ***************************** -->
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<a href="#">
+				<span class="school col-md-4" id="cambridge">
+					<span class="featurebox">
+						<h3>Cambridge Study Centre</h3>
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<a href="#">
+				<span class="school col-md-4" id="london">
+					<span class="featurebox">
+						<h3>London Study Centre</h3>
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<a href="#">
+				<span class="school col-md-4" id="oxford">
+					<span class="featurebox">
+						<h3>Oxford Study Centre</h3>
+						<p>Brighton Study Centre Brighton Study Centre Brighton Study Centre Study Centre Brighton Study Centre</p>
+						<button class="btn btn-sm red">Learn more <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>
+				</span>
+			</a>
+			<div class="clearfix"></div>
+		</section>
+
+		<section id="study-options">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Study Options</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<!-- ***************************** -->
+						<!-- Each programme could be a component, so content people can decide which one to use depending on the need of that each landing page -->
+						<!-- ***************************** -->
+						<div class="gcse">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<!-- ***************************** -->
+							<!-- LIST of courses -->
+							<!-- ***************************** -->
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+
+						<div class="a-l">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fdn">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+
+						<div class="ug1">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="premas">
+							<span class="img"></span>
+							<div class="text">Text htext subjects taught at our campuses</div>
+							<ul>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+								<li><a href="#">Subject with link if needed</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width bg_img" id="admissions">
+			<div class="shadow"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Admissions</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!-- ***************************** -->
+						<!-- Rich text box -->
+						<!-- ***************************** -->
+						<p>Lorem ipsum aenean at habitasse sit in nam nec class. Gravida cras orci consequat. Sodales scelerisque morbi sed molestie nulla turpis erat leo et. Turpis a dictum nibh mauris blandit donec. Viverra varius mattis tempor egestas non accumsan sociosqu in nam orci orci. A massa at sociis per inceptos. Proin mi et. 
+
+</p><p>Aliquet feugiat pede curabitur arcu congue. Malesuada vestibulum dictum bibendum egestas lacus tellus et nulla. Nunc mauris mauris arcu dictum et. Facilisis massa arcu nibh. Aliquet nullam sapien facilisis at accumsan per. Duis aliquet egestas quam at. Congue sagittis elit ac ridiculus sit cras aliquam mattis volutpat. Vulputate erat et. 
+
+</p>
+						<!-- ***************************** -->
+						<!-- /Rich text box -->
+						<!-- ***************************** -->
+						<a href="#" class="btn btn-lg red">Apply now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="director-quote">
+							<div class="director-quote-bg">
+								<p>Our students’ achievements are a direct result of their dedication to study, but are also made possible by our teachers and staff who go the extra mile to deliver a world-class experience for them – a great combination for success!</p>
+							</div>
+							<cite>Andy Airey, Director of Bellerbys College</cite>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<img src="app/img/circle.png" class="circle">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 student_testimonial gcse">
+						<img src="app/img/student1.png">
+						<span>
+							<p>Our students’ achievements are a direct result of their dedication to study, but are also made possible.</p>
+							<cite>
+								<strong>Student Name</strong>
+								text text text
+							</cite>
+						</span>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-5 student_testimonial ug1">
+						<img src="app/img/student1.png">
+						<span>
+							<p>Our students’ achievements are a direct result of their dedication to study, but are also made possible.</p>
+							<cite>
+								<strong>Student Name</strong>
+								text text text
+							</cite>
+						</span>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width bg_img" id="test">
+			<div class="shadow"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2><span>Another test</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!-- ***************************** -->
+						<!-- Rich text box -->
+						<!-- ***************************** -->
+						<p>Lorem ipsum etiam vitae praesent. Massa at quam malesuada nunc nulla sit vel lacus mattis. Neque a velit ac. Nec magna id congue lacus tellus orci augue. Ipsum mauris ut. Mauris velit congue. Libero curae; semper nunc parturient quisque placerat sed. Donec conubia eget vestibulum imperdiet lorem duis quisque fusce. Posuere nec. 
+
+</p><p>Imperdiet massa tristique. Eu nec tellus gravida sollicitudin class mauris praesent lacus et justo. Natoque et malesuada. Ultricies pellentesque justo tempor per eget. Sollicitudin nullam aliquam nunc. Pretium imperdiet fusce. Enim ipsum nullam aenean a parturient scelerisque dignissim libero nibh sapien vivamus. Ullamcorper et morbi turpis. Dolor massa non nec. 
+
+</p>
+						<!-- ***************************** -->
+						<!-- /Rich text box -->
+						<!-- ***************************** -->
+						<a href="#" class="btn btn-lg red">Apply now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<p>© 2014 Study Group</p>
+						<div class="social_media">
+				        	<a href="#"><img src="app/img/instagram.png"></a>
+				        	<a href="#"><img src="app/img/twitter.png"></a>
+				        	<a href="#"><img src="app/img/facebook.png"></a>
+				        	<a href="#"><img src="app/img/gplus.png"></a>
+				        	<a href="#"><img src="app/img/youtube.png"></a>
+				      </div>
+					</div>
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+							<li><a href="#">Link here</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="app/js/application.js"></script>
+    <script src="app/js/bootstrap.js"></script>
+    <script src="app/js/jquery.smooth-scroll.min.js"></script>
+    
+    
+
+    <script type="text/javascript">
+    WebFontConfig = { fontdeck: { id: '44201' } };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+  </body>
+</html>
